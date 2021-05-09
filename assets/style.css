@@ -1,0 +1,98 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue",
+    Helvetica, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-weight: lighter;
+  user-select: none;
+  background: center no-repeat url("bg.jpg");
+  background-size: cover;
+}
+
+#main {
+  width: 90%;
+  max-width: 30rem;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+img {
+  width: 60%;
+  max-width: 12rem;
+  height: 60%;
+  max-height: 12rem;
+  border-radius: 20%;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+a {
+  transition: color 0.2s ease, border-color 0.2s ease;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cdddfe;
+}
+footer {
+  font-size: smaller;
+}
+
+@keyframes sheen {
+  0% {
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+a.button {
+  height: 1.3rem;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(205, 221, 254, 0.3);
+}
+a.button:before {
+  content: "";
+  background-color: rgba(205, 221, 254, 0.6);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+a.button:hover {
+  color: #ffffff;
+  background-color: rgba(205, 221, 254, 0.4);
+}
+a.button:active {
+  background-color: rgba(205, 221, 254, 0.2);
+}
+a.button:hover:before {
+  transform: skewX(-45deg) translateX(13.5em);
+  transition: all 0.5s ease-in-out;
+}
