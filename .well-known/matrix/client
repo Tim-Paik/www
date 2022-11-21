@@ -1,0 +1,5 @@
+{
+    "m.homeserver": {
+        "base_url": "https://home.timpaik.top:8448"
+    }
+}
